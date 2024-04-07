@@ -23,8 +23,10 @@ equivs-build postgresql-16-control
 dpkg -i postgresql-16_1.0_all.deb
 
 # Clean up
-rm postgres-16-control postgresql-16_1.0_all.deb
+rm -rf postgresql-16-control postgresql-16_1.0_amd64*
 
 # Remove equivs
 apt-get purge -y equivs
 apt-get autoremove -y
+
+
