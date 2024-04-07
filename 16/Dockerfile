@@ -26,7 +26,7 @@ RUN \
   ln -s /opt/bitnami/postgresql/lib /usr/lib/postgresql/${POSTGRESQL_VERSION}/lib && \
   ln -s /opt/bitnami/postgresql/include /usr/include/postgresql/${POSTGRESQL_VERSION} && \
   ln -s /etc/logrotate.d /opt/bitnami/postgresql/etc/logrotate.d && \
-  apt install -f --force-yes -y -V \
+  apt install -y -V \
     postgresql-${POSTGRESQL_VERSION}-pgdg-pgroonga=${PGROONGA_VERSION} \
     groonga-normalizer-mysql \
     groonga-token-filter-stem \
